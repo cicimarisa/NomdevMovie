@@ -1,0 +1,15 @@
+$colors: (
+    f2: #F2F2F2,
+    white: #FFF,
+    black: #000,
+    orange: #e56331,
+    orange-old: #d5592a,
+    green: #6cbd9f,
+    green-old: #579880,
+    gray: #444,
+    b2: #20272E,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
